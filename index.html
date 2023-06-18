@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">My work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack developer</p>
+            <h1>Hi, I'm <span>Priyanka</span><br>Narsale From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Motivated Software developer & Data science student who is a master of data analysis while having experience in website development & data analysis. Posing good presentation skills with many successfully completed interesting projects at the college level.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python / C# / C++ / c / Asp.net</li>
+                        <li><span>Databases</span><br>Mysql / PhpMyAdmin </li>
+                        <li><span>Data Science / Machine Learning /</span><br>Data Visualization / Supervised & Unsupervised ML algorithms / ANN / CNN / EDA </li>
+                        <li><span>Frontend Technology</span><br>Html / CSS /bootstrap / Javascript</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>July 2022 - Current</span><br>Intern As Junior Software developer at Cravita technologies India pvt ltd</li>
+                        <li><span>Jun 2022 - Aug 2022</span><br>Data science & Machine Learning Intern at Sparks Foundation</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2023</span><br>B.Tech In Information Technology Data Science at Ajeenkya D.Y. Patil University , Pune</li>
+                        <li><span>2017-2019</span><br>Higher Secondary School from Residential Junior College Ahmednagar.</li>
+                        <li><span>2017</span><br>Secondary School from Goreshwar Madhyamik Vidyalaya Goregaon.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web App Developement</h2>
+                <p>Ability to develope responsive web applications using various languages </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Machine learning (ML) engineering</h2>
+                <p> skills in building scalable and production-ready ML systems that can handle large datasets and real-time inference. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Frontend Developement </h2>
+                <p>Skills in frontend developement</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Backend Developement</h2>
+                <p>Ability to creating, maintaining, testing and debugging the entire back end of an application or system</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Multiple Disease Prediction Using ML</h3>
+                    <p>The Website helps to predict the Multiple disease on a single platform . Deployed On A Streamlit platform </p>
+                    <a href="https://priyanarsale0508-public-ml-web-app-mdps-public-6gg0b3.streamlit.app/"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/PriyaNarsale0508"><i class="fab fa-github"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="1.jpeg">
+                <div class="layer">
+                    <h3>Hand Guesture Controlled Powerpoint Presentation using OpenCv</h3>
+                    <p>In this project, we created a Hand Gesture based Presentation system using Opencv in Python.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="portfolio.jpg">
+                <div class="layer">
+                    <h3>Personal Portfolio Frontend Web Design using HTML & CSS </h3>
+                    <p>The Webdesign Gives you the Tour to my Personal portfolio and my works.</p>
+                    <a href="https://portfolio-abhi-awhale-2407.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>priyankanarsale38@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +91 9766242127</p>
+                <div class="social-icons">
+                    <a href="https://github.com/PriyaNarsale0508"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/priyanka-narsale-8215a7225"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="Priyanka_Narsale_cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Priyanka. Made with <i class="fas fa-heart"></i> by <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1">Priyanka Narsale</a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwlAbW74ukwGCiDdgaA2Na1qloErpLEcgdf9-AQlTZ8y7q9xnhdDnxupyOGKjW3XQng/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent successfully";
+          setTimeout(function() {
+            msg.innerHTML = "";
+          }, 5000);
+          form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+    });
+  </script>
+  
+</body>
+</html>
